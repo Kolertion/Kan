@@ -409,4 +409,4 @@ if __name__ == '__main__':
     x = 0
     for t in tiles:
         out.paste(t, (x, 4)); x += t.width + 6
-    out.save('/tmp/work/swatches.png')
+    out.save(sys.argv[2] if len(sys.argv) > 2 else 'swatches.png')
